@@ -1,22 +1,22 @@
-package us.jaime.unospigot.files;
+package iq.jaime.itemqualityapi.files;
 
+import iq.jaime.itemqualityapi.ItemQualityAPI;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import us.jaime.unospigot.UnoSpigot;
 
 import java.io.File;
 import java.io.IOException;
 
 public class YamlFile {
-    private UnoSpigot plugin;
+    private ItemQualityAPI plugin;
     private String fileName;
     private FileConfiguration fileConfiguration = null;
     private File file = null;
     private String folderName;
     public boolean newFile;
 
-    public YamlFile(String fileName, String folderName, UnoSpigot plugin, boolean newFile){
+    public YamlFile(String fileName, String folderName, ItemQualityAPI plugin, boolean newFile){
         this.fileName = fileName;
         this.folderName = folderName;
         this.plugin = plugin;

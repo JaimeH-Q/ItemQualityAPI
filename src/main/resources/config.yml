@@ -1,0 +1,16 @@
+# Si está en true, el plugin va a reemplazar el lore del item por completo.
+# Dudo que tengamos que usar esto en algún momento, pero la opción está por si hace falta.
+replace_lore: false
+
+qualities:
+  legendary: "&6Legendario"
+  epic: "&dÉpico"
+  good: "&#7ff54cBueno"
+  normal: "&#d9f24bNormal"
+  bad: "&#f2724bMala"
+  trash: "&#e83d3aDeplorable"
+
+quality_lore:
+  - " "
+  - "&8&l| &7Calidad: &r%quality%"
+  - " "

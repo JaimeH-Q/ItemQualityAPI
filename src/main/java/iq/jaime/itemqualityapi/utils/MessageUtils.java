@@ -1,7 +1,6 @@
-package us.jaime.unospigot.utils;
+package iq.jaime.itemqualityapi.utils;
 
 import net.md_5.bungee.api.ChatColor;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -50,28 +49,6 @@ public class MessageUtils {
         itemMeta.setDisplayName(colorize(name));
         item.setItemMeta(itemMeta);
         return item;
-    }
-
-    public static String getFormattedTime(int time, String message) {
-        // Si no hay placeholders, devolvemos el tiempo tal cual
-        if (!message.contains("%minutes%") && !message.contains("%seconds%")) {
-            return String.valueOf(time);
-        }
-
-        if (message.contains("%minutes%")) {
-            int minutes = time / 60;
-            int seconds = time % 60;
-
-            // Reemplazamos los placeholders de minutos y segundos
-            message = message.replace("%minutes%", String.valueOf(minutes));
-            message = message.replace("%seconds%", String.valueOf(seconds));
-        }
-        // Si solo contiene %seconds%, usamos el tiempo completo
-        else if (message.contains("%seconds%")) {
-            message = message.replace("%seconds%", String.valueOf(time));
-        }
-
-        return message;
     }
 
 
