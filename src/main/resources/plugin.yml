@@ -1,0 +1,4 @@
+name: ItemQualityAPI
+version: '${project.version}'
+main: iq.jaime.itemqualityapi.ItemQualityAPI
+api-version: '1.21'
