@@ -23,7 +23,9 @@ public class ConfigFile {
     private boolean replaceLore;
 
     public void reloadConfig(){
+        configFile.registerConfig();
         FileConfiguration config = configFile.getConfig();
+        Bukkit.getConsoleSender().sendMessage(config.getKeys(false).toString());
         saveReplacements(config.getConfigurationSection("qualities"));
         qualityLore = config.getStringList("quality_lore");
         replaceLore = config.getBoolean("replace_lore");
