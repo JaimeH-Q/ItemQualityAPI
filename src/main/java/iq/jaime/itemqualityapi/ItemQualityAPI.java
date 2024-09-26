@@ -29,7 +29,9 @@ public final class ItemQualityAPI extends JavaPlugin {
 
     private void registerAPI(){
         iqAPI = new IQAPIImpl(this);
-        getServer().getServicesManager().register(IQAPI.class, iqAPI, this, ServicePriority.Normal);
+        getServer().getServicesManager().register(IQAPI.class, iqAPI, this, ServicePriority.High);
+        getServer().getConsoleSender().sendMessage(colorize("&eItemQualityAPI registrada."));
+
     }
 
     public ConfigFile getConfigFile() {
