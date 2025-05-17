@@ -5,6 +5,6 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.github.JaimeH-Q:ItemQualityAPI:v1.0.0'
+  compileOnly 'com.github.JaimeH-Q:ItemQualityAPI:v1.0.0'
 }
 ```
